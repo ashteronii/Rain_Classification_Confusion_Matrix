@@ -6,7 +6,7 @@ This project uses a Support Vector Classifier (SVC) with an RBF kernel to predic
 
 ## Dataset
 
-- Zeeshan Ullah (2023). *Weather Forecast Dataset*. Kaggle. https://www.kaggle.com/datasets/zeeshier/weather-forecast-dataset  
+- Zeeshan Ullah (2025). *Weather Forecast Dataset*. Kaggle. https://www.kaggle.com/datasets/zeeshier/weather-forecast-dataset  
 - The dataset contains daily weather observations including temperature, humidity, wind speed, cloud cover, and pressure.
 - Target labels include: `rain` and `no rain`.
 
