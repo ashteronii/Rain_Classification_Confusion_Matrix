@@ -14,7 +14,7 @@ This project uses a Support Vector Classifier (SVC) with an RBF kernel to predic
 
 ## Project Structure
 
-- `Rain_Classificiation_Confusion_Matrix.py`:
+- `Rain_Classificiation_Confusion_Matrix.py`: Model training and evaluation script.
 - `Weather_Cleaned.csv`: Cleaned dataset used for training.
 - `Weather_Forecast_Data_Cleaned.py`: Data cleaning script.
 - `weather_forecast_data.csv`: Raw dataset from Kaggle.
