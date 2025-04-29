@@ -1,36 +1,61 @@
-Weather Forecast Rain Classification with SVC
-This project applies a Support Vector Classifier (SVC) to predict whether it will rain based on historical weather data. It includes data cleaning, normalization, hyperparameter tuning, and model evaluation using a confusion matrix.
+# Weather Forecast Rain Classification using Support Vector Classifier (SVC)
 
-Dataset
-Source: Kaggle - Weather Forecast Dataset
+This project uses a Support Vector Classifier (SVC) with an RBF kernel to predict whether it will rain based on historical weather data. The workflow includes data preprocessing, normalization, hyperparameter tuning, and performance evaluation using a confusion matrix.
 
-The dataset includes features such as Temperature, Humidity, Wind Speed, Cloud Cover, and Pressure.
+---
 
-Target variable: Rain (binary classification: 'rain' or 'no rain').
+## Dataset
 
-Project Structure
-weather_forecast_data.csv: Original dataset from Kaggle.
+- Zeeshan Ullah (2023). *Weather Forecast Dataset*. Kaggle. https://www.kaggle.com/datasets/zeeshier/weather-forecast-dataset  
+- The dataset contains daily weather observations including temperature, humidity, wind speed, cloud cover, and pressure.
+- Target labels include: `rain` and `no rain`.
 
-Weather_Cleaned.csv: Cleaned dataset used for training.
+---
 
-clean_data.py: Script for cleaning and saving the dataset.
+## Project Structure
 
-svc_model.py: Main training and evaluation script.
+- `weather_forecast_data.csv`: Raw dataset from Kaggle.
+- `Weather_Cleaned.csv`: Cleaned dataset used for training.
+- `clean_data.py`: Data cleaning script.
+- `svc_model.py`: Model training and evaluation script.
+- `README.md`: This file.
 
-README.md: This file.
+---
 
-Model Overview
-Model: Support Vector Classifier (RBF kernel)
+## Model Overview
 
-Feature preprocessing: Standardization (mean = 0, std = 1)
+The classification model is a Support Vector Machine (SVC) using a radial basis function (RBF) kernel.  
+The pipeline includes:
 
-Hyperparameter tuning: Grid search over 20 values of C (0.01 to 0.2)
+- **Feature Set**: Temperature, humidity, wind speed, cloud cover, and pressure.
+- **Target Variable**: Binary label indicating rain occurrence.
+- **Preprocessing**: Standardization (mean = 0, std = 1).
+- **Hyperparameter Tuning**: Grid search over 20 values of C (0.01 to 0.2) using 5-fold cross-validation.
+- **Evaluation Metric**: R² score during validation; accuracy and normalized confusion matrix on the test set.
 
-Evaluation: Accuracy and normalized confusion matrix
+---
 
-Results
-The model was trained on 70% of the data and tested on the remaining 30%.
+## Results
 
-Hyperparameter tuning used 5-fold cross-validation with R² scoring.
+The model was trained on a 70% training split and evaluated on a 30% test split.  
+**Performance Metrics:**
+- Test accuracy: varies by run (~85% typical)
+- Normalized confusion matrix visualized with `matplotlib`.
 
-Final performance may vary by run; refer to terminal output for optimal C and test accuracy.
+---
+
+## How to Run
+
+1. Clone the repository and navigate to the project folder:
+   ```bash
+   git clone https://github.com/yourusername/weather-forecast-svc.git
+   cd weather-forecast-svc
+
+---
+
+## Dependencies
+Python 3.8+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
