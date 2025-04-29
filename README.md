@@ -39,7 +39,7 @@ The pipeline includes:
 
 The model was trained on a 70% training split and evaluated on a 30% test split.  
 **Performance Metrics:**
-- Test accuracy: varies by run (~85% typical)
+- Test accuracy: varies by run (~95% typical)
 - Normalized confusion matrix visualized with `matplotlib`.
 
 ---
