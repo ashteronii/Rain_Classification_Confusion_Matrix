@@ -60,7 +60,7 @@ The model was trained on a 70% training split and evaluated on a 30% test split.
 ---
 
 ## Dependencies
-Python 3.8+
+- Python 3.8+
 - pandas
 - numpy
 - scikit-learn
