@@ -50,12 +50,15 @@ The model was trained on a 70% training split and evaluated on a 30% test split.
    ```bash
    git clone https://github.com/yourusername/weather-forecast-svc.git
    cd weather-forecast-svc
+   ```
 2. Run the data cleaning script:
    ```bash
    python clean_data.py
+   ```
 3. Train and evaluate the model:
    ```bash
    python svc_model.py
+   ```
 
 ---
 
